@@ -46,6 +46,7 @@ def nyc_pigeon_organizer(data)
       end
     end
   end
+  binging.pry
 
   #fill in categories
   data.each do |category, list|  #'color', 'purple'
