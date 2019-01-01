@@ -56,7 +56,7 @@ def nyc_pigeon_organizer(data)
         if !pigeon_list[name][category].include?(attributes[attribute])
           pigeon_list[name][category] << attributes[attribute]
         end
-        binding.pry
+        # binding.pry
       end
     end
   end
