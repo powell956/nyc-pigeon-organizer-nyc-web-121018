@@ -27,10 +27,10 @@ def nyc_pigeon_organizer(data)
   data.each do |category, list|  #'color', 'purple'
     category.each do |attribute, names|  #'purple', names array
       names.each do |name|
-        if pigeon_list[category]
-          pigeon_list[category].store(list, [])
+        if pigeon_list[name]
+          pigeon_list[name].store(list, [])
         else
-          pigeon_list[category] = { list => [] }
+          pigeon_list[name] = { list => [] }
         end
       end
     end
