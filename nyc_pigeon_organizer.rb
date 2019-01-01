@@ -46,7 +46,7 @@ def nyc_pigeon_organizer(data)
       end
     end
   end
-  attributes = attributes.select { |k,v| k.is_a? Symbol }
+  # attributes = attributes.select { |k,v| k.is_a? Symbol }
   # binding.pry
 
   #fill in categories with attributes
