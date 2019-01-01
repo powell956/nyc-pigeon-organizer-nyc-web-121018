@@ -34,7 +34,7 @@ def nyc_pigeon_organizer(data)
         end
       end
     end
-    binding.pry
+    # binding.pry
   end
 
   #create hash of attributes and their corresponding strings
@@ -47,7 +47,7 @@ def nyc_pigeon_organizer(data)
     end
   end
   attributes = attributes.select { |k,v| k.is_a? Symbol }
-  binding.pry
+  # binding.pry
 
   #fill in categories with attributes
   data.each do |category, list|  #'color', 'purple'
@@ -60,7 +60,7 @@ def nyc_pigeon_organizer(data)
         end
       end
     end
-    binding.pry
+    # binding.pry
   end
 
   pigeon_list
