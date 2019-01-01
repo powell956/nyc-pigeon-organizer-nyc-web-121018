@@ -28,9 +28,9 @@ def nyc_pigeon_organizer(data)
     list.each do |attribute, names|  #'purple', names array
       names.each do |name|
         if pigeon_list[name]
-          pigeon_list[name].store(category, {})
+          pigeon_list[name].store(category, [])
         else
-          pigeon_list[name] = { category => {} }
+          pigeon_list[name] = { category => [] }
         end
       end
     end
@@ -49,7 +49,7 @@ def nyc_pigeon_organizer(data)
   attributes = attributes.select { |k,v| k.is_a? Symbol }
   binding.pry
 
-  #fill in categories
+  #fill in categories with attributes
   data.each do |category, list|  #'color', 'purple'
     list.each do |attribute, names|  #'purple', names array
       names.each do |name|
