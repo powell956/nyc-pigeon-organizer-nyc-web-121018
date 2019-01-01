@@ -6,7 +6,7 @@ def nyc_pigeon_organizer(data)
 
   #gather attribute categories by name
   data.each do |category, list|  #'color', 'purple'
-    category.each do |attribute, names|  #'purple', names array 
+    category.each do |attribute, names|  #'purple', names array
       names.each do |name|
         if pigeon_list[name]
           pigeon_list[name].store(list, [])
@@ -18,8 +18,8 @@ def nyc_pigeon_organizer(data)
   end
   binding.pry
   #fill in categories
-  data.each do |category, list|
-    list.each do |attribute, names|
+  data.each do |category, list|  #'color', 'purple'
+    list.each do |attribute, names|  #'purple', names array
       names.each do |name|
         if pigeon_list[name][category][attribute]
           pigeon_list[name][category][attribute] << name
