@@ -52,11 +52,11 @@ def nyc_pigeon_organizer(data)
   #fill in categories with attributes
   data.each do |category, list|  #'color', 'purple'
     list.each do |attribute, names|  #'purple', names array
-      names.each do |name|
-        if pigeon_list[name][category][attribute]
-          pigeon_list[name][category][attribute] << name
+      if !pigeon_list[name][category][attribute]
+        if attributes.keys.include? { |el| attribute }
+          pigeon_list[name][category][attribute] << attributes[attribute]
         else
-          pigeon_list[name][category][attribute] = [name]
+          pigeon_list[name][category][attribute] << name
         end
       end
     end
