@@ -53,8 +53,8 @@ def nyc_pigeon_organizer(data)
   data.each do |category, list|  #'color', 'purple'
     list.each do |attribute, names|  #'purple', names array
       counter = 0
-      if !pigeon_list[names[counter]][category][attributes[attribute]]
-        pigeon_list[name[counter]][category][attributes[attribute]] << name
+      if !pigeon_list[names[counter]][category].include? { |el| attributes[attribute] }
+        pigeon_list[name[counter]][category] << name
       end
       counter += 1
     end
