@@ -25,7 +25,7 @@ def nyc_pigeon_organizer(data)
 
   #gather attribute categories by name
   data.each do |category, list|  #'color', 'purple'
-    category.each do |attribute, names|  #'purple', names array
+    list.each do |attribute, names|  #'purple', names array
       names.each do |name|
         if pigeon_list[name]
           pigeon_list[name].store(list, [])
