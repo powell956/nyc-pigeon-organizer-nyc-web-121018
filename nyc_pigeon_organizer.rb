@@ -30,7 +30,7 @@ def nyc_pigeon_organizer(data)
         if pigeon_list[category]
           pigeon_list[category].store(list, [])
         else
-          pigeon_list[name] = { list => [] }
+          pigeon_list[category] = { list => [] }
         end
     #   end
     # end
