@@ -37,9 +37,11 @@ def nyc_pigeon_organizer(data)
     binding.pry
   end
 
+  #create a
+
   #fill in categories
   data.each do |category, list|  #'color', 'purple'
-    list.each do |attribute, names|  #'purple', names array
+    list.each do |attribute.to_s, names|  #'purple', names array
       names.each do |name|
         if pigeon_list[name][category][attribute]
           pigeon_list[name][category][attribute] << name
