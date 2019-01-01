@@ -17,7 +17,7 @@ def nyc_pigeon_organizer(data)
     end
     binding.pry
   end
-  
+
   #fill in categories
   data.each do |category, list|  #'color', 'purple'
     list.each do |attribute, names|  #'purple', names array
